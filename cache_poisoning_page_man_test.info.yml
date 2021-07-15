@@ -1,0 +1,7 @@
+name: 'poisoned request page manager test'
+type: module
+description: 'Demo to force an error in page Manager'
+core_version_requirement: '^8.8 || ^9'
+package: 'Custom'
+dependencies:
+  - page_manager

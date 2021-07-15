@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Contains cache_poisoning_page_man_test.module.
+ */
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Session\AccountInterface;
+
+function cache_poisoning_page_man_test_entity_access(EntityInterface $entity, $operation, AccountInterface $account) {
+  $result = AccessResult::neutral();
+
+  // This order break the endpoint "/node/add"
+  $is_admin_route = \Drupal::service('router.admin_context')->isAdminRoute();
+
+  return $result;
+}

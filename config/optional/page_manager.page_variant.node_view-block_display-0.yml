@@ -1,0 +1,21 @@
+uuid: cf812e7e-1bc4-4042-ae37-a519f2c26303
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+id: node_view-block_display-0
+label: 'Cache poisoning variant'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: 2dde1a73-a6e6-4978-93a7-31102d182cd1
+  label: null
+  weight: 0
+  page_title: 'Cache poisoning variant TEST'
+page: node_view
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
